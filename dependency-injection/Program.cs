@@ -1,5 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
+builder.Services.AddScoped<IAccountReader, AccountReader>();
+builder.Services.AddScoped<BankAccount>();
 
 var app = builder.Build();
 app.MapRazorPages();

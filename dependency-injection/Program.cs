@@ -1,6 +1,49 @@
 var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+builder.Services.AddRazorPages();
 
-app.MapGet("/", () => "Hello World!");
+var app = builder.Build();
+app.MapRazorPages();
+
+app.MapGet("/account/{name}", ReadInterestRate);
 
 app.Run();
+
+void ReadInterestRate(string username, IAccountReader p)
+{
+    Console.WriteLine($"Displaying interest rate for {username}");
+    p.DisplayInterest();
+}
+
+// Service implementation (DI container will create this class)
+public class AccountReader : IAccountReader
+{ 
+    private readonly BankAccount _bank;
+
+    public void DisplayInterest()
+    {
+        Console.WriteLine($"\t{_bank.GetInterest()}");
+    }
+
+    public AccountReader(BankAccount ba)
+    { 
+        _bank = ba;
+    }
+}
+
+// Dependency
+public class BankAccount
+{
+    private static string _company = "PNC";
+    private static double _interest = 2.00;
+
+    public string GetInterest()
+    {
+        return $"Current interest rate for {_company} bank is {_interest}%";
+    }
+}
+
+// Service type
+public interface IAccountReader
+{
+    void DisplayInterest();
+}

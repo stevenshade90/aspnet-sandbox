@@ -1,11 +1,9 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Registering with DI container
-builder.Services.AddRazorPages();
 builder.Services.AddAccountReader();
 
 var app = builder.Build();
-app.MapRazorPages();
 
 app.MapGet("/account/{username}", ReadInterestRate);
 

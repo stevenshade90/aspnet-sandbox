@@ -1,19 +1,18 @@
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
-builder.Services.AddScoped<IAccountReader, AccountReader>();
-builder.Services.AddScoped<BankAccount>();
+builder.Services.AddAccountReader();
 
 var app = builder.Build();
 app.MapRazorPages();
 
-app.MapGet("/account/{name}", ReadInterestRate);
+app.MapGet("/account/{username}", ReadInterestRate);
 
 app.Run();
 
-void ReadInterestRate(string username, IAccountReader p)
+string ReadInterestRate(string username, IAccountReader p)
 {
-    Console.WriteLine($"Displaying interest rate for {username}");
     p.DisplayInterest();
+    return $"\tAccount info for: {username}";
 }
 
 // Service implementation (DI container will create this class)
@@ -23,7 +22,7 @@ public class AccountReader : IAccountReader
 
     public void DisplayInterest()
     {
-        Console.WriteLine($"\t{_bank.GetInterest()}");
+        Console.WriteLine($"{_bank.GetInterest()}");
     }
 
     public AccountReader(BankAccount ba)
@@ -41,6 +40,16 @@ public class BankAccount
     public string GetInterest()
     {
         return $"Current interest rate for {_company} bank is {_interest}%";
+    }
+}
+
+public static class AccountReaderServiceCollectionExtensions
+{ 
+    public static IServiceCollection AddAccountReader(this IServiceCollection services)
+    {
+        services.AddScoped<IAccountReader, AccountReader>();
+        services.AddScoped<BankAccount>();
+        return services;
     }
 }
 

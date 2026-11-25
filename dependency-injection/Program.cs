@@ -1,4 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
+
+// Registering with DI container
 builder.Services.AddRazorPages();
 builder.Services.AddAccountReader();
 
@@ -11,8 +13,8 @@ app.Run();
 
 string ReadInterestRate(string username, IAccountReader p)
 {
-    p.DisplayInterest();
-    return $"\tAccount info for: {username}";
+    string interestText = p.DisplayInterest();
+    return $"Account info for: {username}\n{interestText}";
 }
 
 // Service implementation (DI container will create this class)
@@ -20,14 +22,13 @@ public class AccountReader : IAccountReader
 { 
     private readonly BankAccount _bank;
 
-    public void DisplayInterest()
-    {
-        Console.WriteLine($"{_bank.GetInterest()}");
-    }
-
     public AccountReader(BankAccount ba)
     { 
         _bank = ba;
+    }
+    public string DisplayInterest()
+    {
+        return _bank.GetInterest();
     }
 }
 
@@ -56,5 +57,5 @@ public static class AccountReaderServiceCollectionExtensions
 // Service type
 public interface IAccountReader
 {
-    void DisplayInterest();
+    string DisplayInterest();
 }

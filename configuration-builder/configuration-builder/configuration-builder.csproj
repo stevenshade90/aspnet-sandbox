@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>configuration_builder</RootNamespace>
+    <UserSecretsId>ef6b6b42-a0bb-4a0d-9c58-e1ce44cb649f</UserSecretsId>
   </PropertyGroup>
 
 </Project>

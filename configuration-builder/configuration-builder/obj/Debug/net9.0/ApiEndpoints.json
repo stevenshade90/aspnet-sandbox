@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "configuration_builder.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_0",
+    "Method": "\u003CMain\u003Eb__0_1",
     "RelativePath": "",
     "HttpMethod": "GET",
     "IsController": false,
@@ -19,7 +19,7 @@
   },
   {
     "ContainingType": "configuration_builder.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_1",
+    "Method": "\u003CMain\u003Eb__0_2",
     "RelativePath": "GetName",
     "HttpMethod": "GET",
     "IsController": false,
@@ -37,7 +37,7 @@
   },
   {
     "ContainingType": "configuration_builder.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_3",
+    "Method": "\u003CMain\u003Eb__0_4",
     "RelativePath": "GetProfession",
     "HttpMethod": "GET",
     "IsController": false,
@@ -55,7 +55,25 @@
   },
   {
     "ContainingType": "configuration_builder.Program\u002B\u003C\u003Ec",
-    "Method": "\u003CMain\u003Eb__0_2",
+    "Method": "\u003CMain\u003Eb__0_5",
+    "RelativePath": "GetProfessionWithDi",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "configuration_builder.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__0_3",
     "RelativePath": "GetSecret",
     "HttpMethod": "GET",
     "IsController": false,

@@ -18,6 +18,10 @@ namespace configuration_builder
 
             builder.Services.Configure<UserInfo>(builder.Configuration.GetSection("UserInfo"));
 
+            // DI alternative
+            builder.Services.AddSingleton<UserInfo>(provider =>
+                provider.GetRequiredService<IOptions<UserInfo>>().Value);
+
             WebApplication app = builder.Build();
 
 
@@ -36,6 +40,7 @@ namespace configuration_builder
                 UserInfo user = options.Value;
                 return user.Profession;
             });
+            app.MapGet("/GetProfessionWithDi", (UserInfo info) => info.Profession);
 
             app.Run();
         }

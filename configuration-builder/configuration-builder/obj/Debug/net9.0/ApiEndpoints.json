@@ -37,6 +37,24 @@
   },
   {
     "ContainingType": "configuration_builder.Program\u002B\u003C\u003Ec",
+    "Method": "\u003CMain\u003Eb__0_3",
+    "RelativePath": "GetProfession",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "configuration_builder.Program\u002B\u003C\u003Ec",
     "Method": "\u003CMain\u003Eb__0_2",
     "RelativePath": "GetSecret",
     "HttpMethod": "GET",

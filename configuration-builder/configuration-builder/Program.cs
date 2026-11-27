@@ -1,3 +1,5 @@
+using Microsoft.Extensions.Options;
+
 namespace configuration_builder
 {
     public class Program
@@ -7,9 +9,14 @@ namespace configuration_builder
             WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
             builder.Configuration.Sources.Clear();
-            builder.Configuration.AddJsonFile("appsettings.json", optional: true);
+            builder.Configuration
+                .AddJsonFile("appsettings.json", 
+                optional: true,
+                reloadOnChange: true);
             //builder.Configuration.AddEnvironmentVariables();
             builder.Configuration.AddUserSecrets<Program>();
+
+            builder.Services.Configure<UserInfo>(builder.Configuration.GetSection("UserInfo"));
 
             WebApplication app = builder.Build();
 
@@ -24,8 +31,22 @@ namespace configuration_builder
             {
                 return config.GetSection("UserId")["secretVal"];
             });
+            app.MapGet("/GetProfession", (IOptions<UserInfo> options) =>
+            {
+                UserInfo user = options.Value;
+                return user.Profession;
+            });
 
             app.Run();
         }
+    }
+
+    public class UserInfo
+    {
+        public string? Age { get; set; }
+        public string? Profession {  get; set; }
+        public string? Salary {  get; set; }
+
+        public UserInfo() { }
     }
 }

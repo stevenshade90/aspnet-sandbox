@@ -1,3 +1,10 @@
+C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\configuration-builder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\configuration-builder.AssemblyInfoInputs.cache
+C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\configuration-builder.AssemblyInfo.cs
+C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\configuration-builder.csproj.CoreCompileInputs.cache
+C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\configuration-builder.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\configuration-builder.sourcelink.json
 C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\bin\Debug\net9.0\appsettings.json
 C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\bin\Debug\net9.0\configuration-builder.staticwebassets.endpoints.json
@@ -6,13 +13,6 @@ C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-b
 C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\bin\Debug\net9.0\configuration-builder.runtimeconfig.json
 C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\bin\Debug\net9.0\configuration-builder.dll
 C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\bin\Debug\net9.0\configuration-builder.pdb
-C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\rpswa.dswa.cache.json
-C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\configuration-builder.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\configuration-builder.AssemblyInfoInputs.cache
-C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\configuration-builder.AssemblyInfo.cs
-C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\configuration-builder.csproj.CoreCompileInputs.cache
-C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\configuration-builder.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\configuration-builder.sourcelink.json
 C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\steve\source\repos\aspnet-sandbox\configuration-builder\configuration-builder\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json

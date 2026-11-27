@@ -4,10 +4,20 @@ namespace configuration_builder
     {
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
-            var app = builder.Build();
+            WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-            app.MapGet("/", () => "Hello World!");
+            builder.Configuration.Sources.Clear();
+            builder.Configuration.AddJsonFile("appsettings.json", optional: true);
+
+            WebApplication app = builder.Build();
+
+            app.MapGet("/", (IConfiguration config) => config.AsEnumerable());
+            app.MapGet("/GetName", (IConfiguration config) =>
+            {
+                string name = config["CustomSettings:DefaultName:first"];
+                return name;
+
+            });
 
             app.Run();
         }

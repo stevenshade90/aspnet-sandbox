@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\steve\\source\\repos\\aspnet-sandbox\\configuration-builder\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{B9D25C92-0A48-6F81-C656-275C221B606A}|configuration-builder\\configuration-builder.csproj|c:\\users\\steve\\source\\repos\\aspnet-sandbox\\configuration-builder\\configuration-builder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9D25C92-0A48-6F81-C656-275C221B606A}|configuration-builder\\configuration-builder.csproj|solutionrelative:configuration-builder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9D25C92-0A48-6F81-C656-275C221B606A}|configuration-builder\\configuration-builder.csproj|c:\\users\\steve\\source\\repos\\aspnet-sandbox\\configuration-builder\\configuration-builder\\configuration-builder.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B9D25C92-0A48-6F81-C656-275C221B606A}|configuration-builder\\configuration-builder.csproj|solutionrelative:configuration-builder\\configuration-builder.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9D25C92-0A48-6F81-C656-275C221B606A}|configuration-builder\\configuration-builder.csproj|c:\\users\\steve\\source\\repos\\aspnet-sandbox\\configuration-builder\\configuration-builder\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B9D25C92-0A48-6F81-C656-275C221B606A}|configuration-builder\\configuration-builder.csproj|solutionrelative:configuration-builder\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,43 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "configuration-builder.csproj",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\aspnet-sandbox\\configuration-builder\\configuration-builder\\configuration-builder.csproj",
-              "RelativeDocumentMoniker": "configuration-builder\\configuration-builder.csproj",
-              "ToolTip": "C:\\Users\\steve\\source\\repos\\aspnet-sandbox\\configuration-builder\\configuration-builder\\configuration-builder.csproj",
-              "RelativeToolTip": "configuration-builder\\configuration-builder.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-27T07:34:41.328Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\aspnet-sandbox\\configuration-builder\\configuration-builder\\appsettings.json",
-              "RelativeDocumentMoniker": "configuration-builder\\appsettings.json",
-              "ToolTip": "C:\\Users\\steve\\source\\repos\\aspnet-sandbox\\configuration-builder\\configuration-builder\\appsettings.json",
-              "RelativeToolTip": "configuration-builder\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-11-27T07:28:39.02Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\aspnet-sandbox\\configuration-builder\\configuration-builder\\Program.cs",
-              "RelativeDocumentMoniker": "configuration-builder\\Program.cs",
-              "ToolTip": "C:\\Users\\steve\\source\\repos\\aspnet-sandbox\\configuration-builder\\configuration-builder\\Program.cs",
-              "RelativeToolTip": "configuration-builder\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAywCQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-27T03:46:21.009Z",
-              "EditorCaption": ""
             }
           ]
         }

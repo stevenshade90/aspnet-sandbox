@@ -14,8 +14,12 @@ namespace configuration_builder
                 optional: true,
                 reloadOnChange: true);
             //builder.Configuration.AddEnvironmentVariables();
-            builder.Configuration.AddUserSecrets<Program>();
 
+            if (builder.Environment.IsDevelopment())
+            {
+                builder.Configuration.AddUserSecrets<Program>();
+            }
+            
             builder.Services.Configure<UserInfo>(builder.Configuration.GetSection("UserInfo"));
 
             // DI alternative
@@ -23,7 +27,6 @@ namespace configuration_builder
                 provider.GetRequiredService<IOptions<UserInfo>>().Value);
 
             WebApplication app = builder.Build();
-
 
             app.MapGet("/", (IConfiguration config) => config.AsEnumerable());
             app.MapGet("/GetName", (IConfiguration config) =>

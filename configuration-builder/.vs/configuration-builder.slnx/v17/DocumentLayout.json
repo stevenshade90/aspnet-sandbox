@@ -39,15 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "configuration-builder",
+              "Title": "configuration-builder.csproj",
               "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\aspnet-sandbox\\configuration-builder\\configuration-builder\\configuration-builder.csproj",
               "RelativeDocumentMoniker": "configuration-builder\\configuration-builder.csproj",
               "ToolTip": "C:\\Users\\steve\\source\\repos\\aspnet-sandbox\\configuration-builder\\configuration-builder\\configuration-builder.csproj",
               "RelativeToolTip": "configuration-builder\\configuration-builder.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-11-27T07:34:41.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-27T07:34:41.328Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "configuration-builder\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-11-27T07:28:39.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-27T07:28:39.02Z"
             },
             {
               "$type": "Document",
